@@ -1,0 +1,94 @@
+# Yash Prakash Mishra
+
+**Senior Software Engineer — Backend (Node.js · TypeScript · PostgreSQL)**
+
+Remote (India, IST) · +91 84007 93384 · mishra.yash3443@gmail.com
+linkedin.com/in/yash-prakash-mishra-34063016a · github.com/xcalibre1
+
+---
+
+## Professional Summary
+
+Backend engineer with 4.9 years building high-volume, money-moving systems in **Node.js and TypeScript on PostgreSQL**, for SaaS products running 24/7 on AWS. Designed and owned a **gateway-agnostic payments platform** across four providers (Stripe, Razorpay, Affirm, Jodo) with **idempotent transaction handling**, webhook reconciliation and circuit-breaker failover, and a **loan management system serving 10,000+ active loans** for OLX Autos in Chile. Strong on **OOP and design patterns**, **queue-based architecture** (Kafka, BullMQ, SQS), JWT auth and input validation, and **multi-tenant architecture** taken from B2C to 5+ enterprise clients. Fully remote for 4+ years, collaborating asynchronously with product, design, QA and frontend across India, LatAm and the Middle East.
+
+---
+
+## Core Skills
+
+| | |
+|---|---|
+| **Languages & Runtime** | TypeScript, JavaScript (ES6+), Node.js, SQL, C++ |
+| **Backend & APIs** | Express.js, NestJS, Fastify, RESTful API design, input validation & schema guards, OpenAPI/Swagger, BFF pattern |
+| **Databases** | PostgreSQL (query optimization, data modeling, zero-downtime migrations), MySQL, ClickHouse, MongoDB, Redis, Sequelize, Prisma |
+| **Queues & Events** | Apache Kafka, BullMQ, AWS SQS, event-driven architecture, webhooks, idempotency & event deduplication, Server-Sent Events, Socket.io |
+| **Architecture & Scale** | Microservices, distributed systems, multi-tenant architecture, idempotent API design, saga pattern, circuit breaker, Strategy / Factory / Singleton / Observer, HLD & LLD, high transaction volumes, concurrency control, graceful degradation |
+| **Auth & Security** | JWT issuance, rotation & validation, Passport.js, OAuth2, centralised RBAC, audit logging |
+| **Cloud & DevOps** | AWS (EC2, S3, SQS, KMS, IAM, CloudFront), Docker, Kubernetes (working knowledge), CI/CD (GitHub Actions, Jenkins), Apache Airflow |
+| **Observability & Testing** | ELK Stack, structured logging, distributed tracing, Jest, Supertest, Mocha, integration testing, Postman |
+| **Frontend (secondary)** | React.js, Next.js, Redux |
+
+---
+
+## Professional Experience
+
+### Novatr — Senior Software Engineer (Backend Developer → Senior Software Engineer)
+*Aug 2023 – Present · Remote · Y Combinator-backed EdTech SaaS, professional upskilling*
+**Stack:** Node.js, TypeScript, NestJS, Express.js, PostgreSQL, ClickHouse, Redis, Apache Kafka, BullMQ, AWS (EC2, S3, SQS, KMS, IAM), Docker
+
+**Payments & money movement**
+- Architected a **gateway-agnostic payments platform** in Node.js + TypeScript integrating four providers (Razorpay, Stripe, Affirm, Jodo), using **Strategy and Factory patterns** for runtime gateway selection so new gateways onboard without touching core logic; owned the integration POC for each provider.
+- Built **idempotent transaction handling** across every payment path, making retries, duplicate webhooks and client re-submissions safe under concurrent load.
+- Designed and owned a **centralised webhook handler** for all four gateways with self-healing retry logic, **event deduplication** and status reconciliation over Apache Kafka — cutting manual error resolution by **80%**.
+- Applied **circuit breaker** (opossum) and retry strategies (axios-retry) for intelligent failover between gateways, keeping checkout available through provider outages.
+- Delivered a **referral and rewards payout platform** (Express.js, PostgreSQL, Kafka) with PAN verification, fraud prevention, audit trails and Xoxoday programmatic payouts — **+25% referral conversions** and zero manual reward processing.
+
+**Scalability, data & reliability**
+- Introduced **Kafka-based event pipelines** (with BullMQ for in-process jobs) for payments, user lifecycle events and transactional email, decoupling services and raising fault tolerance platform-wide.
+- Owned a **zero-downtime data migration** of payments history from a legacy system onto a ClickHouse-backed unified platform via Node.js ETL, with schema validation, integrity checks and a tested rollback path.
+- Built a real-time quiz engine (Socket.io, Redis) tuned for **low-latency concurrent interactions** across live cohort sessions, with graceful degradation under load.
+
+**Platform & API engineering**
+- Led the **B2C-to-B2B transition** by architecting a **multi-tenant** system (NestJS, PostgreSQL) with tenant-level data isolation, per-tenant configuration and enterprise onboarding workflows — **onboarded 5+ enterprise clients** as technical point of contact.
+- Architected a **centralised RBAC service** (Node.js, TypeScript, PostgreSQL) across 5+ internal tools with role inheritance, permission scoping and audit logging — **60% fewer access incidents**.
+- Built a multi-layer **JWT authentication service** (Passport.js) handling token issuance, rotation and validation across Admin, LMS and BFF surfaces.
+- Designed a CMS backend (NestJS, PostgreSQL) with content lifecycle workflows and versioning — **85% faster cohort creation**, recurring on-call incidents eliminated.
+- **Led a team of 5 engineers** on architecture decisions, code reviews and delivery timelines; partnered with product, design, QA and frontend from discovery through deployment, and was technical point of contact for enterprise clients translating business requirements into architecture.
+
+### OLX Autos — Software Engineer
+*May 2022 – May 2023 · Remote · Used-car financing infrastructure for Latin America (FinTech)*
+**Stack:** Node.js, TypeScript, Express.js, PostgreSQL, MySQL, Sequelize, REST APIs, Docker, AWS
+
+- Built and owned foreclosure and manual repayment flows in the **Loan Management System** (Node.js, Express.js, PostgreSQL), automating loan closure and repayment tracking for **10,000+ active loans in Chile** and replacing a fully manual process.
+- Designed **loan lifecycle state machine APIs** with **input validation guards at every transition**, cutting manual intervention by **40%** and making state changes auditable.
+- Designed and owned risk analysis and credit scoring workflows in the **Loan Origination System**, reducing credit approval time by **30%** and improving decision auditability.
+- Built a reusable PDF generation library (PDFKit, Handlebars) for programmatic invoices inside loan disbursement flows — fewer invoice errors, 10+ hours saved weekly; served as technical point of contact for the Chile operations team **asynchronously across a 9+ hour time-zone gap**.
+
+### Lenskart — Software Engineer (Frontend)
+*Apr 2021 – Apr 2022 · India's largest eyewear retailer · Exit: project concluded on successful UAE market launch*
+**Stack:** React.js, Redux, TypeScript, Next.js, Node.js (BFF), Webpack, REST APIs
+
+- Led the rebuild of core commerce flows (homepage, cart, checkout, order tracking) in React.js, Redux and TypeScript for the UAE launch — **30% faster launch** with improved Lighthouse scores, as primary frontend point of contact for go-live.
+- Consumed and shaped **Node.js BFF APIs** for the new storefront, defining response contracts with backend teams — the work that moved me fully into backend engineering; also cut initial JS payload via code splitting and bundle analysis (Webpack) and integrated reCAPTCHA to reduce fraudulent checkouts.
+
+---
+
+## Selected Project
+
+### BullMQ Dashboard — open-source queue operations tool (2025)
+*Next.js, TypeScript, Node.js, Redis, ioredis, BullMQ, Express.js, Docker, Server-Sent Events* · github.com/xcalibre1/bullmq-dashboard
+
+- **Problem:** existing tools give visibility into **queue-based systems** but no operational control — no retrigger with an edited payload, no bulk retry, no live updates.
+- Built a Next.js + TypeScript dashboard with **Server-Sent Events** for live queue stats, an editable JSON payload editor and a 24-hour throughput chart in pure SVG; App Router API routes backed by a **Redis singleton** (ioredis) and a cached BullMQ `Queue` instance for near-zero per-request overhead, with Docker Compose for one-command self-hosting. Adopted by engineering teams globally.
+
+---
+
+## Education
+
+**B.Tech, Computer Science** — Rajkiya Engineering College, Sonbhadra · Jul 2016 – Jun 2020
+
+---
+
+## Additional
+
+- **Open source:** author and maintainer of BullMQ Dashboard (Node.js, TypeScript), used by engineering teams globally for queue operations.
+- **Remote-first:** 4+ years fully remote across distributed teams in India, Latin America and the Middle East, owning work asynchronously and communicating in writing. **Interests:** distributed systems, payments infrastructure, FinTech, developer tooling.
