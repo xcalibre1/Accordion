@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Yash Prakash Mishra — Senior Software Engineer, Backend</title>
+<link rel="stylesheet" href="../shared/resume.css" />
+</head>
+<body>
+
+<header>
+  <h1>Yash Prakash Mishra</h1>
+  <div class="role">Senior Software Engineer &mdash; Backend (Node.js &middot; TypeScript &middot; PostgreSQL)</div>
+  <div class="contact">
+    <span class="nb">Remote (India, IST)</span> &middot; <span class="nb">+91 84007 93384</span> &middot;
+    <span class="nb">mishra.yash3443@gmail.com</span> &middot;
+    <span class="nb">linkedin.com/in/yash-prakash-mishra-34063016a</span> &middot;
+    <span class="nb">github.com/xcalibre1</span>
+  </div>
+</header>
+
+<h2>Professional Summary</h2>
+<p class="summary">
+  Backend engineer with 4.9 years building high-volume, money-moving systems in <strong>Node.js and TypeScript on
+  PostgreSQL</strong>, for SaaS products running 24/7 on AWS. Designed and owned a <strong>gateway-agnostic payments
+  platform</strong> across four providers (Stripe, Razorpay, Affirm, Jodo) with <strong>idempotent transaction
+  handling</strong>, webhook reconciliation and circuit-breaker failover, and a <strong>loan management system serving
+  10,000+ active loans</strong> for OLX Autos in Chile. Strong on <strong>OOP and design patterns</strong>,
+  <strong>queue-based architecture</strong> (Kafka, BullMQ, SQS), JWT auth and input validation, and
+  <strong>multi-tenant architecture</strong> taken from B2C to 5+ enterprise clients. Fully remote for 4+ years,
+  collaborating asynchronously with product, design, QA and frontend across India, LatAm and the Middle East.
+</p>
+
+<h2>Core Skills</h2>
+<table class="skills">
+  <tr><td class="k">Languages &amp; Runtime</td><td>TypeScript, JavaScript (ES6+), Node.js, SQL, C++</td></tr>
+  <tr><td class="k">Backend &amp; APIs</td><td>Express.js, NestJS, Fastify, RESTful API design, input validation &amp; schema guards, OpenAPI/Swagger, BFF pattern</td></tr>
+  <tr><td class="k">Databases</td><td>PostgreSQL (query optimization, data modeling, zero-downtime migrations), MySQL, ClickHouse, MongoDB, Redis, Sequelize, Prisma</td></tr>
+  <tr><td class="k">Queues &amp; Events</td><td>Apache Kafka, BullMQ, AWS SQS, event-driven architecture, webhooks, idempotency &amp; event deduplication, Server-Sent Events, Socket.io</td></tr>
+  <tr><td class="k">Architecture &amp; Scale</td><td>Microservices, distributed systems, multi-tenant architecture, idempotent API design, saga pattern, circuit breaker, Strategy / Factory / Singleton / Observer, HLD &amp; LLD, high transaction volumes, concurrency control, graceful degradation</td></tr>
+  <tr><td class="k">Auth &amp; Security</td><td>JWT issuance, rotation &amp; validation, Passport.js, OAuth2, centralised RBAC, audit logging</td></tr>
+  <tr><td class="k">Cloud &amp; DevOps</td><td>AWS (EC2, S3, SQS, KMS, IAM, CloudFront), Docker, Kubernetes (working knowledge), CI/CD (GitHub Actions, Jenkins), Apache Airflow</td></tr>
+  <tr><td class="k">Observability &amp; Testing</td><td>ELK Stack, structured logging, distributed tracing, Jest, Supertest, Mocha, integration testing, Postman</td></tr>
+  <tr><td class="k">Frontend (secondary)</td><td>React.js, Next.js, Redux</td></tr>
+</table>
+
+<h2>Professional Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title"><span class="company">Novatr</span> <span class="sep">&mdash;</span> Senior Software Engineer <span class="sep">(Backend Developer &rarr; Senior Software Engineer)</span></div>
+    <div class="job-dates">Aug 2023 &ndash; Present</div>
+  </div>
+  <div class="job-context">Remote &middot; Y Combinator-backed EdTech SaaS, professional upskilling</div>
+  <div class="stack"><b>Stack:</b> Node.js, TypeScript, NestJS, Express.js, PostgreSQL, ClickHouse, Redis, Apache Kafka, BullMQ, AWS (EC2, S3, SQS, KMS, IAM), Docker</div>
+
+  <div class="group">Payments &amp; money movement</div>
+  <ul>
+    <li>Architected a <strong>gateway-agnostic payments platform</strong> in Node.js + TypeScript integrating four providers (Razorpay, Stripe, Affirm, Jodo), using <strong>Strategy and Factory patterns</strong> for runtime gateway selection so new gateways onboard without touching core logic; owned the integration POC for each provider.</li>
+    <li>Built <strong>idempotent transaction handling</strong> across every payment path, making retries, duplicate webhooks and client re-submissions safe under concurrent load.</li>
+    <li>Designed and owned a <strong>centralised webhook handler</strong> for all four gateways with self-healing retry logic, <strong>event deduplication</strong> and status reconciliation over Apache Kafka &mdash; cutting manual error resolution by <strong>80%</strong>.</li>
+    <li>Applied <strong>circuit breaker</strong> (opossum) and retry strategies (axios-retry) for intelligent failover between gateways, keeping checkout available through provider outages.</li>
+    <li>Delivered a <strong>referral and rewards payout platform</strong> (Express.js, PostgreSQL, Kafka) with PAN verification, fraud prevention, audit trails and Xoxoday programmatic payouts &mdash; <strong>+25% referral conversions</strong> and zero manual reward processing.</li>
+  </ul>
+
+  <div class="group">Scalability, data &amp; reliability</div>
+  <ul>
+    <li>Introduced <strong>Kafka-based event pipelines</strong> (with BullMQ for in-process jobs) for payments, user lifecycle events and transactional email, decoupling services and raising fault tolerance platform-wide.</li>
+    <li>Owned a <strong>zero-downtime data migration</strong> of payments history from a legacy system onto a ClickHouse-backed unified platform via Node.js ETL, with schema validation, integrity checks and a tested rollback path.</li>
+    <li>Built a real-time quiz engine (Socket.io, Redis) tuned for <strong>low-latency concurrent interactions</strong> across live cohort sessions, with graceful degradation under load.</li>
+  </ul>
+
+  <div class="group">Platform &amp; API engineering <span class="sep">&mdash; Novatr</span></div>
+  <ul>
+    <li>Led the <strong>B2C-to-B2B transition</strong> by architecting a <strong>multi-tenant</strong> system (NestJS, PostgreSQL) with tenant-level data isolation, per-tenant configuration and enterprise onboarding workflows &mdash; <strong>onboarded 5+ enterprise clients</strong> as technical point of contact.</li>
+    <li>Architected a <strong>centralised RBAC service</strong> (Node.js, TypeScript, PostgreSQL) across 5+ internal tools with role inheritance, permission scoping and audit logging &mdash; <strong>60% fewer access incidents</strong>.</li>
+    <li>Built a multi-layer <strong>JWT authentication service</strong> (Passport.js) handling token issuance, rotation and validation across Admin, LMS and BFF surfaces.</li>
+    <li>Designed a CMS backend (NestJS, PostgreSQL) with content lifecycle workflows and versioning &mdash; <strong>85% faster cohort creation</strong>, recurring on-call incidents eliminated.</li>
+    <li><strong>Led a team of 5 engineers</strong> on architecture decisions, code reviews and delivery timelines; partnered with product, design, QA and frontend from discovery through deployment, and was technical point of contact for enterprise clients translating business requirements into architecture.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title"><span class="company">OLX Autos</span> <span class="sep">&mdash;</span> Software Engineer</div>
+    <div class="job-dates">May 2022 &ndash; May 2023</div>
+  </div>
+  <div class="job-context">Remote &middot; Used-car financing infrastructure for Latin America (FinTech)</div>
+  <div class="stack"><b>Stack:</b> Node.js, TypeScript, Express.js, PostgreSQL, MySQL, Sequelize, REST APIs, Docker, AWS</div>
+  <ul>
+    <li>Built and owned foreclosure and manual repayment flows in the <strong>Loan Management System</strong> (Node.js, Express.js, PostgreSQL), automating loan closure and repayment tracking for <strong>10,000+ active loans in Chile</strong> and replacing a fully manual process.</li>
+    <li>Designed <strong>loan lifecycle state machine APIs</strong> with <strong>input validation guards at every transition</strong>, cutting manual intervention by <strong>40%</strong> and making state changes auditable.</li>
+    <li>Designed and owned risk analysis and credit scoring workflows in the <strong>Loan Origination System</strong>, reducing credit approval time by <strong>30%</strong> and improving decision auditability.</li>
+    <li>Built a reusable PDF generation library (PDFKit, Handlebars) for programmatic invoices inside loan disbursement flows &mdash; fewer invoice errors, 10+ hours saved weekly; served as technical point of contact for the Chile operations team <strong>asynchronously across a 9+ hour time-zone gap</strong>.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title"><span class="company">Lenskart</span> <span class="sep">&mdash;</span> Software Engineer (Frontend)</div>
+    <div class="job-dates">Apr 2021 &ndash; Apr 2022</div>
+  </div>
+  <div class="job-context">India's largest eyewear retailer &middot; Exit: project concluded on successful UAE market launch</div>
+  <div class="stack"><b>Stack:</b> React.js, Redux, TypeScript, Next.js, Node.js (BFF), Webpack, REST APIs</div>
+  <ul>
+    <li>Led the rebuild of core commerce flows (homepage, cart, checkout, order tracking) in React.js, Redux and TypeScript for the UAE launch &mdash; <strong>30% faster launch</strong> with improved Lighthouse scores, as primary frontend point of contact for go-live.</li>
+    <li>Consumed and shaped <strong>Node.js BFF APIs</strong> for the new storefront, defining response contracts with backend teams &mdash; the work that moved me fully into backend engineering; also cut initial JS payload via code splitting and bundle analysis (Webpack) and integrated reCAPTCHA to reduce fraudulent checkouts.</li>
+  </ul>
+</div>
+
+<h2>Selected Project</h2>
+<div class="project">
+  <div class="job-head">
+    <div class="job-title">BullMQ Dashboard <span class="sep">&mdash; open-source queue operations tool</span></div>
+    <div class="job-dates">2025</div>
+  </div>
+  <div class="stack">Next.js, TypeScript, Node.js, Redis, ioredis, BullMQ, Express.js, Docker, Server-Sent Events &middot; github.com/xcalibre1/bullmq-dashboard</div>
+  <ul>
+    <li><strong>Problem:</strong> existing tools give visibility into <strong>queue-based systems</strong> but no operational control &mdash; no retrigger with an edited payload, no bulk retry, no live updates.</li>
+    <li>Built a Next.js + TypeScript dashboard with <strong>Server-Sent Events</strong> for live queue stats, an editable JSON payload editor and a 24-hour throughput chart in pure SVG; App Router API routes backed by a <strong>Redis singleton</strong> (ioredis) and a cached BullMQ <code>Queue</code> instance for near-zero per-request overhead, with Docker Compose for one-command self-hosting. Adopted by engineering teams globally.</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="edu-line">
+  <div><strong>B.Tech, Computer Science</strong> &mdash; Rajkiya Engineering College, Sonbhadra</div>
+  <div class="job-dates">Jul 2016 &ndash; Jun 2020</div>
+</div>
+
+<h2>Additional</h2>
+<ul>
+  <li><strong>Open source:</strong> author and maintainer of BullMQ Dashboard (Node.js, TypeScript), used by engineering teams globally for queue operations.</li>
+  <li><strong>Remote-first:</strong> 4+ years fully remote across distributed teams in India, Latin America and the Middle East, owning work asynchronously and communicating in writing. <strong>Interests:</strong> distributed systems, payments infrastructure, FinTech, developer tooling.</li>
+</ul>
+
+</body>
+</html>
