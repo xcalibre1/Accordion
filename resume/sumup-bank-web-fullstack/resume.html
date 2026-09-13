@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Yash Prakash Mishra — Full-Stack Engineer (React, TypeScript, Node.js)</title>
+<link rel="stylesheet" href="../shared/resume.css" />
+</head>
+<body>
+
+<header>
+  <h1>Yash Prakash Mishra</h1>
+  <div class="role">Full-Stack Engineer &mdash; React &middot; TypeScript &middot; Node.js</div>
+  <div class="contact">
+    <span class="nb">+91 84007 93384</span> &middot; <span class="nb">mishra.yash3443@gmail.com</span> &middot;
+    <span class="nb">linkedin.com/in/yash-prakash-mishra-34063016a</span> &middot;
+    <span class="nb">github.com/xcalibre1</span>
+  </div>
+  <div class="relocation">Open to relocation to Sofia &mdash; office-first</div>
+</header>
+
+<h2>Professional Summary</h2>
+<p class="summary">
+  Full-stack engineer with 4.9 years shipping production features end-to-end &mdash; <strong>React and TypeScript</strong>
+  on the front, <strong>Node.js and PostgreSQL</strong> behind them. Owned and led the complete rebuild of Lenskart's core
+  shopping flows (homepage, cart, checkout, order tracking) in React, Redux and TypeScript for its UAE launch; at Novatr
+  launched a Next.js web platform and <strong>defined the Node.js BFF contracts</strong> that its Admin, LMS and web
+  surfaces run on. FinTech throughout: multi-gateway payments, loan origination and servicing for
+  <strong>10,000+ active loans</strong> &mdash; domains where the edge cases are the work. Comfortable in a
+  <strong>multi-stack codebase</strong> (Node.js, PostgreSQL, Kafka, Redis, AWS, Docker), and used to owning integrations,
+  tests, observability and production support rather than handing them off.
+</p>
+
+<h2>Core Skills</h2>
+<table class="skills">
+  <tr><td class="k">Frontend</td><td>React.js, Next.js (App Router), Redux, TypeScript, JavaScript (ES6+), component design patterns, HTML5, CSS3, SVG, WebXR</td></tr>
+  <tr><td class="k">Build &amp; Performance</td><td>Webpack (route-based code splitting, tree shaking, bundle analysis), Lighthouse, time-to-interactive, graceful degradation</td></tr>
+  <tr><td class="k">State &amp; Real-time</td><td>Redux, REST data fetching, Server-Sent Events, Socket.io, Redis-backed live updates</td></tr>
+  <tr><td class="k">Full-stack &amp; API Contracts</td><td>Node.js BFF pattern, API contract definition, RESTful design, OpenAPI/Swagger, input validation &amp; schema guards, JWT auth, webhooks, idempotent API design, owning third-party integrations</td></tr>
+  <tr><td class="k">Backend &amp; Databases</td><td>Node.js, TypeScript, Express.js, NestJS, Fastify; PostgreSQL, MySQL, ClickHouse, MongoDB, Redis, Sequelize, Prisma</td></tr>
+  <tr><td class="k">Events &amp; Messaging</td><td>Apache Kafka, BullMQ, AWS SQS, event-driven architecture</td></tr>
+  <tr><td class="k">Testing &amp; Code Quality</td><td>Jest, Supertest, Mocha, unit &amp; integration testing, Postman, pull-request review across a 5-engineer team</td></tr>
+  <tr><td class="k">Cloud &amp; CI/CD</td><td>AWS (EC2, S3, CloudFront, SQS, IAM, KMS), Docker, GitHub Actions, Jenkins, Kubernetes (working knowledge)</td></tr>
+  <tr><td class="k">Observability &amp; Production</td><td>ELK Stack, structured logging, distributed tracing, circuit breakers, self-healing retries, on-call and incident reduction</td></tr>
+  <tr><td class="k">Architecture</td><td>Microservices, distributed systems, multi-tenant architecture, Strategy / Factory / Singleton / Observer, HLD &amp; LLD</td></tr>
+</table>
+
+<h2>Professional Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title"><span>Novatr</span> <span class="sep">&mdash;</span> Senior Software Engineer <span class="sep">(Backend Developer &rarr; Senior Software Engineer)</span></div>
+    <div class="job-dates">Aug 2023 &ndash; Present</div>
+  </div>
+  <div class="job-context">Remote &middot; Y Combinator-backed SaaS platform, 24/7 on AWS</div>
+  <div class="stack"><b>Stack:</b> TypeScript, React.js, Next.js, Node.js, NestJS, Express.js, PostgreSQL, ClickHouse, Redis, Apache Kafka, BullMQ, Socket.io, AWS, Docker</div>
+
+  <div class="group">Web surfaces &amp; full-stack ownership</div>
+  <ul>
+    <li>Launched a freemium web platform (<strong>Next.js, React.js, TypeScript, Node.js</strong>) end-to-end &mdash; scoping, components, APIs, production &mdash; as a lead-generation funnel driving new user acquisition across enterprise cohorts.</li>
+    <li>Defined and owned the <strong>Node.js BFF layer and its API contracts</strong> across Admin, LMS and web surfaces, so client needs shaped the contract instead of backend response shapes leaking into components.</li>
+    <li>Built a multi-layer <strong>JWT authentication service</strong> (Passport.js) handling token issuance, rotation and validation across all three surfaces.</li>
+    <li>Delivered a real-time quiz engine (Node.js, <strong>Socket.io</strong>, Redis) powering live cohort sessions, tuned for <strong>low-latency concurrent interactions</strong> with graceful degradation under load.</li>
+  </ul>
+
+  <div class="group">Back-office &amp; internal tooling</div>
+  <ul>
+    <li>Architected <strong>centralised RBAC across 5+ internal tools</strong> (Node.js, TypeScript, PostgreSQL) with role inheritance, permission scoping and audit logging &mdash; <strong>60% fewer access incidents</strong>; this is the permission model support and ops users work under.</li>
+    <li>Built a CMS backend (NestJS, PostgreSQL) with content lifecycle workflows and versioning &mdash; <strong>85% faster cohort creation</strong> and recurring on-call incidents eliminated.</li>
+    <li>Architected the B2C-to-B2B move as a <strong>multi-tenant</strong> system with tenant-level data isolation, per-tenant configuration and enterprise onboarding workflows &mdash; <strong>onboarded 5+ enterprise clients</strong> as technical point of contact.</li>
+  </ul>
+
+  <div class="group">Integrations, payments &amp; modernisation <span class="sep">&mdash; Novatr</span></div>
+  <ul>
+    <li>Architected a <strong>gateway-agnostic payments platform</strong> integrating four providers (Stripe, Razorpay, Affirm, Jodo) using <strong>Strategy and Factory patterns</strong> for runtime gateway selection; <strong>owned each integration end-to-end</strong> from POC to production, not just its client code.</li>
+    <li>Designed a centralised webhook handler for all four gateways with self-healing retries, event deduplication and Kafka-based reconciliation &mdash; <strong>80% less manual error resolution</strong>; added circuit breakers (opossum) for failover when a provider degrades.</li>
+    <li>Drove a <strong>stack migration off a legacy payments system</strong> onto a ClickHouse-backed platform with <strong>zero downtime</strong> (Node.js ETL, schema validation, integrity checks, tested rollback), retiring the technical debt that was slowing delivery.</li>
+    <li>Introduced <strong>Kafka event pipelines</strong> (with BullMQ) for payments, user lifecycle and transactional email, decoupling services and improving fault tolerance platform-wide.</li>
+  </ul>
+
+  <div class="group">Review, support &amp; team</div>
+  <ul>
+    <li><strong>Led a team of 5 engineers</strong> across architecture decisions, <strong>pull-request review</strong> and delivery timelines; partnered with product, design and QA from discovery through deployment, and was technical point of contact for enterprise clients.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title"><span>OLX Autos</span> <span class="sep">&mdash;</span> Software Engineer</div>
+    <div class="job-dates">May 2022 &ndash; May 2023</div>
+  </div>
+  <div class="job-context">Remote &middot; Used-car financing infrastructure for Latin America (FinTech lending)</div>
+  <div class="stack"><b>Stack:</b> Node.js, TypeScript, Express.js, PostgreSQL, MySQL, Sequelize, REST APIs, Docker, AWS</div>
+  <ul>
+    <li>Built and owned foreclosure and manual repayment flows in the <strong>Loan Management System</strong>, automating loan closure and repayment tracking for <strong>10,000+ active loans in Chile</strong> and replacing a fully manual process.</li>
+    <li>Designed <strong>loan lifecycle state machine APIs</strong> with input validation guards at every transition &mdash; the kind of <strong>intricate, edge-case-heavy financial flow</strong> where a wrong state transition costs real money &mdash; cutting manual intervention by <strong>40%</strong>.</li>
+    <li>Designed risk analysis and credit scoring workflows in the <strong>Loan Origination System</strong>, reducing credit approval time by <strong>30%</strong> and improving decision auditability.</li>
+    <li>Built a reusable PDF generation library (PDFKit, Handlebars) for programmatic invoices in loan disbursement; served as technical point of contact for the Chile operations team across a <strong>9+ hour time-zone gap</strong>.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title"><span>Lenskart</span> <span class="sep">&mdash;</span> Software Engineer (Frontend)</div>
+    <div class="job-dates">Apr 2021 &ndash; Apr 2022</div>
+  </div>
+  <div class="job-context">India's largest eyewear retailer &middot; Exit: project concluded on successful UAE market launch</div>
+  <div class="stack"><b>Stack:</b> React.js, Redux, TypeScript, JavaScript (ES6+), Next.js, Webpack, WebXR, Node.js (BFF), REST APIs</div>
+  <ul>
+    <li>Owned and led the <strong>complete rebuild of core shopping flows</strong> &mdash; homepage, cart, checkout, order tracking &mdash; in <strong>React.js, Redux and TypeScript</strong> for the UAE market launch: <strong>30% faster launch</strong> with improved Lighthouse scores, as primary frontend point of contact for the client go-live.</li>
+    <li>Applied <strong>route-based code splitting, tree shaking and bundle analysis</strong> (Webpack), cutting initial JS payload and improving <strong>time-to-interactive</strong> across every key page.</li>
+    <li>Integrated <strong>WebXR</strong> immersive try-on components and Google reCAPTCHA, lifting engagement and reducing fraudulent checkout attempts.</li>
+    <li>Built against a <strong>Node.js BFF</strong> layer, defining response contracts with backend teams &mdash; where the full-stack habit started.</li>
+  </ul>
+</div>
+
+<h2>Selected Project</h2>
+<div class="project">
+  <div class="job-head">
+    <div class="job-title">BullMQ Dashboard <span class="sep">&mdash; open-source operations tooling</span></div>
+    <div class="job-dates">2025</div>
+  </div>
+  <div class="stack">Next.js (App Router), TypeScript, Node.js, Redis, ioredis, BullMQ, Express.js, Docker, SVG, Server-Sent Events &middot; github.com/xcalibre1/bullmq-dashboard</div>
+  <ul>
+    <li><strong>Problem:</strong> Bull Board-style tools give visibility into queues but no operational control &mdash; no retrigger with an edited payload, no bulk retry, no live updates.</li>
+    <li>Built a <strong>Next.js + TypeScript back-office dashboard</strong> with <strong>Server-Sent Events</strong> for live queue stats, an editable JSON payload editor, a 24-hour throughput chart in pure SVG, plus payload field search, bulk retry, promote, pause and resume.</li>
+    <li>API routes backed by a <strong>Redis singleton</strong> (ioredis) and a cached BullMQ <code>Queue</code> instance for near-zero per-request overhead; Docker Compose for one-command self-hosting. <strong>Adopted by engineering teams globally.</strong></li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="edu-line">
+  <div><strong>B.Tech, Computer Science</strong> &mdash; Rajkiya Engineering College, Sonbhadra</div>
+  <div class="job-dates">Jul 2016 &ndash; Jun 2020</div>
+</div>
+
+<h2>Additional</h2>
+<ul>
+  <li><strong>Open source:</strong> author and maintainer of BullMQ Dashboard (Next.js, TypeScript), used by engineering teams globally.</li>
+  <li><strong>Relocation:</strong> open to relocating to Sofia for an office-first role. Four years of distributed work across India, Latin America and the Middle East &mdash; strong written communication, and glad to be back in a room with a team.</li>
+  <li><strong>Interests:</strong> banking and payments products, frontend architecture, developer tooling.</li>
+</ul>
+
+</body>
+</html>
