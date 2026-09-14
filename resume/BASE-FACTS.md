@@ -9,8 +9,8 @@ Keep this file updated as the career progresses; the per-company folders are der
 - **Name:** Yash Prakash Mishra
 - **Contact:** +91 84007 93384 · mishra.yash3443@gmail.com
 - **Links:** linkedin.com/in/yash-prakash-mishra-34063016a · github.com/xcalibre1
-- **Location:** India (IST). Fully remote for 4+ years.
-- **Experience:** 4.9 years (first role April 2021)
+- **Location:** India (IST). Fully remote for 5 years.
+- **Experience:** **5.1 years of employment** as of September 2026 — Lenskart 12 months, OLX Autos 12 months, Novatr 37 months and counting. First role April 2021, so the span is 5.4 years with a three-month gap between OLX Autos and Novatr. Write this as "5+ years"; recompute it whenever a version is refreshed, since several roles list a 5-year minimum and an out-of-date figure can fail a filter. (The original resume said "4.10 years", which was correct in early 2026 and is now stale.)
 - **Education:** B.Tech Computer Science, Rajkiya Engineering College, Sonbhadra — Jul 2016 to Jun 2020
 
 ## Novatr — Aug 2023 to present

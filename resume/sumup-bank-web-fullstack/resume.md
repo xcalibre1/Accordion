@@ -10,7 +10,7 @@ linkedin.com/in/yash-prakash-mishra-34063016a · github.com/xcalibre1
 
 ## Professional Summary
 
-Full-stack engineer with 4.9 years shipping production features end-to-end — **React and TypeScript** on the front, **Node.js and PostgreSQL** behind them. Owned and led the complete rebuild of Lenskart's core shopping flows (homepage, cart, checkout, order tracking) in React, Redux and TypeScript for its UAE launch; at Novatr launched a Next.js web platform and **defined the Node.js BFF contracts** that its Admin, LMS and web surfaces run on. FinTech throughout: multi-gateway payments, loan origination and servicing for **10,000+ active loans** — domains where the edge cases are the work. Comfortable in a **multi-stack codebase** (Node.js, PostgreSQL, Kafka, Redis, AWS, Docker), and used to owning integrations, tests, observability and production support rather than handing them off.
+Full-stack engineer with 5+ years shipping production features end-to-end — **React and TypeScript** on the front, **Node.js and PostgreSQL** behind them. Owned and led the complete rebuild of Lenskart's core shopping flows (homepage, cart, checkout, order tracking) in React, Redux and TypeScript for its UAE launch; at Novatr launched a Next.js web platform and **defined the Node.js BFF contracts** that its Admin, LMS and web surfaces run on. FinTech throughout: multi-gateway payments, loan origination and servicing for **10,000+ active loans** — domains where the edge cases are the work. Comfortable in a **multi-stack codebase** (Node.js, PostgreSQL, Kafka, Redis, AWS, Docker), and used to owning integrations, tests, observability and production support rather than handing them off.
 
 ---
 
@@ -97,5 +97,5 @@ Full-stack engineer with 4.9 years shipping production features end-to-end — *
 ## Additional
 
 - **Open source:** author and maintainer of BullMQ Dashboard (Next.js, TypeScript), used by engineering teams globally.
-- **Relocation:** open to relocating to Sofia for an office-first role. Four years of distributed work across India, Latin America and the Middle East — strong written communication, and glad to be back in a room with a team.
+- **Relocation:** open to relocating to Sofia for an office-first role. Five years of distributed work across India, Latin America and the Middle East — strong written communication, and glad to be back in a room with a team.
 - **Interests:** banking and payments products, frontend architecture, developer tooling.

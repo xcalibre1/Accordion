@@ -22,11 +22,11 @@
 
 **FinTech is now explicit.** OLX Autos is labelled "Used-car financing infrastructure for Latin America (FinTech)" so the domain match is visible without the reader inferring it from "loan management system."
 
-**Remote and async collaboration are evidenced, not asserted.** Deel is a 7,000-person distributed company and the job description calls out async collaboration twice. Rather than claiming to be a good remote worker, the resume points at the Chile operations team across a 9+ hour gap, the UAE go-live, and 4+ years fully remote.
+**Remote and async collaboration are evidenced, not asserted.** Deel is a 7,000-person distributed company and the job description calls out async collaboration twice. Rather than claiming to be a good remote worker, the resume points at the Chile operations team across a 9+ hour gap, the UAE go-live, and 5 years fully remote.
 
 **Skills are reordered backend-first** and grouped to mirror the job description's own headings (databases, scalability, high-volume performance, API development, auth). Recruiters and keyword filters both scan this block.
 
-**Length.** Two pages, tightened to remove whitespace. At 4.9 years, two full pages is right; three pages with a half-empty last page reads as padding.
+**Length.** Two pages, tightened to remove whitespace. At 5+ years, two full pages is right; three pages with a half-empty last page reads as padding.
 
 ## Gaps worth closing before you submit
 
