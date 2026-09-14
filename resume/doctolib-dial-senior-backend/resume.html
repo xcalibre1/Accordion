@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Yash Prakash Mishra — Senior Backend Engineer (Node.js, TypeScript, Real-Time Systems)</title>
+<link rel="stylesheet" href="../shared/resume.css" />
+</head>
+<body>
+
+<header>
+  <h1>Yash Prakash Mishra</h1>
+  <div class="role">Senior Backend Engineer &mdash; Node.js &middot; TypeScript &middot; PostgreSQL &middot; Real-Time Systems</div>
+  <div class="contact">
+    <span class="nb">+91 84007 93384</span> &middot; <span class="nb">mishra.yash3443@gmail.com</span> &middot;
+    <span class="nb">linkedin.com/in/yash-prakash-mishra-34063016a</span> &middot;
+    <span class="nb">github.com/xcalibre1</span>
+  </div>
+  <div class="relocation">Open to relocation to Berlin &mdash; hybrid &middot; English: professional fluency</div>
+</header>
+
+<h2>Professional Summary</h2>
+<p class="summary">
+  Senior backend engineer with <strong>5+ years in Node.js and TypeScript on PostgreSQL</strong>, and a track record of
+  <strong>deleting administrative work</strong>: 80% less manual error resolution in payments, 40% less manual
+  intervention in loan servicing, a fully manual loan-closure process replaced outright for
+  <strong>10,000+ active loans</strong>, and 10+ hours a week returned to an operations team. Built a
+  <strong>provider-agnostic integration layer</strong> across four payment providers with runtime selection,
+  <strong>circuit-breaker fallback</strong>, idempotent retries and event deduplication &mdash; designed for the reality
+  that third-party services fail mid-request. Comfortable operating what I ship: Kafka event pipelines,
+  <strong>real-time low-latency services</strong> on Socket.io and Redis, ELK and distributed tracing, Docker, GitHub
+  Actions, and zero-downtime PostgreSQL and ClickHouse migrations. I own problems from design through production support.
+</p>
+
+<h2>Core Skills</h2>
+<table class="skills">
+  <tr><td class="k">Languages &amp; Runtime</td><td>TypeScript, JavaScript (ES6+), Node.js, SQL, C++</td></tr>
+  <tr><td class="k">Backend &amp; APIs</td><td>Express.js, NestJS, Fastify, RESTful API design, structured request/response contracts, input validation &amp; schema guards, OpenAPI/Swagger, JWT auth, idempotent API design, webhooks</td></tr>
+  <tr><td class="k">PostgreSQL &amp; Data</td><td>PostgreSQL (data modeling, zero-downtime migrations, query optimization), ClickHouse, MySQL, MongoDB, Redis, Sequelize, Prisma</td></tr>
+  <tr><td class="k">Real-time</td><td>Socket.io, Server-Sent Events, Redis-backed live state, low-latency concurrent sessions, graceful degradation under load</td></tr>
+  <tr><td class="k">Reliability &amp; Fallbacks</td><td>Circuit breakers (opossum), retry with backoff (axios-retry), provider failover, event deduplication, idempotency, self-healing pipelines, reconciliation</td></tr>
+  <tr><td class="k">Event-Driven</td><td>Apache Kafka, BullMQ, AWS SQS, event-driven architecture, webhook processing at scale</td></tr>
+  <tr><td class="k">Cloud &amp; CI/CD</td><td>AWS (EC2, S3, CloudFront, SQS, IAM, KMS), Docker, Kubernetes (working knowledge), GitHub Actions, Jenkins, Apache Airflow</td></tr>
+  <tr><td class="k">Observability &amp; Debugging</td><td>ELK Stack, structured logging, distributed tracing, debugging microservices in production, on-call and incident reduction</td></tr>
+  <tr><td class="k">Testing</td><td>Jest, Supertest, Mocha, unit &amp; integration testing, Postman</td></tr>
+  <tr><td class="k">Architecture</td><td>Microservices, distributed systems, multi-tenant architecture, saga pattern, Strategy / Factory / Singleton / Observer, HLD &amp; LLD</td></tr>
+  <tr><td class="k">Frontend (secondary)</td><td>React.js, Next.js, Redux</td></tr>
+</table>
+
+<h2>Professional Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title"><span>Novatr</span> <span class="sep">&mdash;</span> Senior Software Engineer <span class="sep">(Backend Developer &rarr; Senior Software Engineer)</span></div>
+    <div class="job-dates">Aug 2023 &ndash; Present</div>
+  </div>
+  <div class="job-context">Remote &middot; Y Combinator-backed SaaS platform, 24/7 on AWS &middot; Led a team of 5 engineers</div>
+  <div class="stack"><b>Stack:</b> Node.js, TypeScript, NestJS, Express.js, PostgreSQL, ClickHouse, Redis, Apache Kafka, BullMQ, Socket.io, AWS (EC2, S3, SQS, KMS, IAM), Docker</div>
+
+  <div class="group">Third-party integrations, fallbacks &amp; failure modes</div>
+  <ul>
+    <li>Architected a <strong>provider-agnostic integration layer</strong> across four payment providers (Stripe, Razorpay, Affirm, Jodo) using <strong>Strategy and Factory patterns for runtime provider selection</strong>, so a new provider onboards without touching core logic; owned each integration end-to-end from POC to production.</li>
+    <li>Added <strong>circuit breakers</strong> (opossum) and <strong>retry with backoff</strong> (axios-retry) for automatic failover when a provider degrades or times out &mdash; the checkout path stays available through upstream outages instead of failing with it.</li>
+    <li>Designed a centralised webhook handler for all four providers with self-healing retries, <strong>event deduplication</strong> and Kafka-based status reconciliation, <strong>cutting manual error resolution by 80%</strong>.</li>
+    <li>Made every payment path <strong>idempotent</strong>, so retries, duplicate provider callbacks and client re-submissions are safe under concurrent load.</li>
+  </ul>
+
+  <div class="group">Real-time &amp; event-driven systems</div>
+  <ul>
+    <li>Built a <strong>real-time quiz engine</strong> (Node.js, <strong>Socket.io</strong>, Redis) for live cohort sessions, tuned for <strong>low-latency concurrent interactions</strong> with graceful degradation when connections drop under load.</li>
+    <li>Introduced <strong>Kafka event pipelines</strong> (with BullMQ for in-process jobs) for payments, user lifecycle events and transactional email, decoupling services and improving fault tolerance platform-wide.</li>
+  </ul>
+
+  <div class="group">PostgreSQL, data modeling &amp; migrations <span class="sep">&mdash; Novatr</span></div>
+  <ul>
+    <li>Owned a <strong>zero-downtime migration</strong> of payments history off a legacy system onto a ClickHouse-backed platform via Node.js ETL, with schema validation, integrity checks and a tested rollback path.</li>
+    <li>Designed the <strong>multi-tenant PostgreSQL data model</strong> for the B2C-to-B2B transition &mdash; tenant-level data isolation, per-tenant configuration, enterprise onboarding workflows &mdash; and <strong>onboarded 5+ enterprise clients</strong> as technical point of contact.</li>
+    <li>Built a CMS backend (NestJS, PostgreSQL) with content lifecycle workflows and versioning: <strong>85% faster cohort creation</strong>, and recurring on-call incidents eliminated.</li>
+  </ul>
+
+  <div class="group">Access control, review &amp; team</div>
+  <ul>
+    <li>Architected <strong>centralised RBAC across 5+ internal tools</strong> with role inheritance, permission scoping and audit logging &mdash; <strong>60% fewer access incidents</strong>; plus a multi-layer <strong>JWT</strong> service (Passport.js) for token issuance, rotation and validation across three surfaces.</li>
+    <li>Led 5 engineers across architecture decisions, <strong>pull-request review</strong> and delivery timelines; partnered with product, design and QA from discovery through production.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title"><span>OLX Autos</span> <span class="sep">&mdash;</span> Software Engineer</div>
+    <div class="job-dates">May 2022 &ndash; May 2023</div>
+  </div>
+  <div class="job-context">Remote &middot; Used-car financing infrastructure for Latin America &mdash; regulated, high-stakes workflows</div>
+  <div class="stack"><b>Stack:</b> Node.js, TypeScript, Express.js, PostgreSQL, MySQL, Sequelize, REST APIs, Docker, AWS</div>
+  <ul>
+    <li>Built and owned foreclosure and manual repayment flows in the Loan Management System, automating loan closure and repayment tracking for <strong>10,000+ active loans in Chile</strong> and <strong>replacing a fully manual process</strong> that the operations team had been running by hand.</li>
+    <li>Designed <strong>loan lifecycle state machine APIs</strong> with <strong>validation guards at every transition</strong> &mdash; explicit legal states, explicit rejections, an audit trail per change &mdash; <strong>cutting manual intervention by 40%</strong>.</li>
+    <li>Designed risk analysis and credit scoring workflows in the Loan Origination System, <strong>reducing credit approval time by 30%</strong> while improving decision auditability.</li>
+    <li>Built a reusable PDF generation library (PDFKit, Handlebars) for programmatic invoices in loan disbursement, <strong>returning 10+ hours a week</strong> to the operations team; technical point of contact for the Chile team across a 9+ hour time-zone gap.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title"><span>Lenskart</span> <span class="sep">&mdash;</span> Software Engineer (Frontend)</div>
+    <div class="job-dates">Apr 2021 &ndash; Apr 2022</div>
+  </div>
+  <div class="job-context">India's largest eyewear retailer &middot; Exit: project concluded on successful UAE market launch</div>
+  <div class="stack"><b>Stack:</b> React.js, Redux, TypeScript, Next.js, Node.js (BFF), Webpack, REST APIs</div>
+  <ul>
+    <li>Led the rebuild of core commerce flows (homepage, cart, checkout, order tracking) in React.js, Redux and TypeScript for the UAE launch &mdash; <strong>30% faster launch</strong> with improved Lighthouse scores, as primary frontend point of contact for go-live.</li>
+    <li>Defined response contracts against a <strong>Node.js BFF</strong> layer with backend teams, and cut initial JS payload through code splitting and bundle analysis &mdash; the work that moved me into backend engineering.</li>
+  </ul>
+</div>
+
+<h2>Selected Project</h2>
+<div class="project">
+  <div class="job-head">
+    <div class="job-title">BullMQ Dashboard <span class="sep">&mdash; open-source operational tooling for distributed job pipelines</span></div>
+    <div class="job-dates">2025</div>
+  </div>
+  <div class="stack">Next.js (App Router), TypeScript, Node.js, Redis, ioredis, BullMQ, Express.js, Docker, SVG, Server-Sent Events &middot; github.com/xcalibre1/bullmq-dashboard</div>
+  <ul>
+    <li><strong>Problem:</strong> Bull Board-style tools show queue state but give no operational control when a pipeline misbehaves in production &mdash; no retrigger with a corrected payload, no bulk retry, no live view.</li>
+    <li>Built a <strong>Next.js + TypeScript operations dashboard</strong> with <strong>Server-Sent Events</strong> for live queue stats, an editable JSON payload editor, a 24-hour throughput chart in pure SVG, plus payload field search, bulk retry, promote, pause and resume &mdash; the tooling I wanted while debugging distributed job failures on call.</li>
+    <li>API routes backed by a <strong>Redis singleton</strong> (ioredis) and a cached BullMQ <code>Queue</code> instance for near-zero per-request overhead; Docker Compose for one-command self-hosting. <strong>Adopted by engineering teams globally.</strong></li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="edu-line">
+  <div><strong>B.Tech, Computer Science</strong> &mdash; Rajkiya Engineering College, Sonbhadra</div>
+  <div class="job-dates">Jul 2016 &ndash; Jun 2020</div>
+</div>
+
+<h2>Additional</h2>
+<ul>
+  <li><strong>Open source:</strong> author and maintainer of BullMQ Dashboard (Node.js, TypeScript), used by engineering teams globally for queue operations.</li>
+  <li><strong>Relocation &amp; languages:</strong> open to relocating to Berlin for a hybrid role; professional fluency in English; 5 years working across distributed teams in India, Latin America and the Middle East.</li>
+  <li><strong>Currently learning:</strong> LLM application engineering &mdash; prompting, tool calling, structured outputs and evaluation harnesses &mdash; alongside streaming audio and real-time voice pipelines.</li>
+</ul>
+
+</body>
+</html>

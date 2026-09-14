@@ -8,6 +8,7 @@ Tailored resume versions for Yash Prakash Mishra, one directory per target role.
 |---|---|---|---|
 | `deel-backend-engineer/` | Deel — Backend Engineer (Node.js) | Backend-led. Payments and FinTech first, frontend condensed. | `Yash_Prakash_Mishra_Backend_Engineer_Node.pdf` |
 | `sumup-bank-web-fullstack/` | SumUp — Bank Web squad (full-stack, Sofia) | Frontend-core full-stack. React/TypeScript first, back-office tooling and API contracts surfaced. | `Yash_Prakash_Mishra_Fullstack_Engineer_React_Node.pdf` |
+| `doctolib-dial-senior-backend/` | Doctolib — Senior SWE, DIAL / Phone Assistant (Berlin) | Backend-led, reliability and real-time first, with the administrative-burden-reduction track record as the hook. **Two hard requirements are unmet — read that version's notes.** | `Yash_Prakash_Mishra_Senior_Backend_Engineer_Node_TypeScript.pdf` |
 
 Each directory contains `resume.html` (the source), `resume.md`, `resume.txt`, the rendered PDF, and `TAILORING-NOTES.md` explaining what was emphasised for that job description and which of its requirements the experience does not yet cover.
 

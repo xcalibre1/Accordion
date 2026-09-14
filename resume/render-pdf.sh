@@ -19,6 +19,7 @@ pdf_name_for() {
   case "$1" in
     deel-backend-engineer)      echo "Yash_Prakash_Mishra_Backend_Engineer_Node.pdf" ;;
     sumup-bank-web-fullstack)   echo "Yash_Prakash_Mishra_Fullstack_Engineer_React_Node.pdf" ;;
+    doctolib-dial-senior-backend) echo "Yash_Prakash_Mishra_Senior_Backend_Engineer_Node_TypeScript.pdf" ;;
     *)                          echo "Yash_Prakash_Mishra_Resume.pdf" ;;
   esac
 }
