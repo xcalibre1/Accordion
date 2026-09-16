@@ -9,6 +9,7 @@ Tailored resume versions for Yash Prakash Mishra, one directory per target role.
 | `deel-backend-engineer/` | Deel — Backend Engineer (Node.js) | Backend-led. Payments and FinTech first, frontend condensed. | `Yash_Prakash_Mishra_Backend_Engineer_Node.pdf` |
 | `sumup-bank-web-fullstack/` | SumUp — Bank Web squad (full-stack, Sofia) | Frontend-core full-stack. React/TypeScript first, back-office tooling and API contracts surfaced. | `Yash_Prakash_Mishra_Fullstack_Engineer_React_Node.pdf` |
 | `doctolib-dial-senior-backend/` | Doctolib — Senior SWE, DIAL / Phone Assistant (Berlin) | Backend-led, reliability and real-time first, with the administrative-burden-reduction track record as the hook. **Two hard requirements are unmet — read that version's notes.** | `Yash_Prakash_Mishra_Senior_Backend_Engineer_Node_TypeScript.pdf` |
+| `almedia-backend-engineer/` | Almedia — Backend Engineer (Berlin, on-site) | Node/NestJS, led by the rewards-and-payouts fraud work. **Written in a deliberately human voice** — first person, minimal bold, plain verbs — and it names Almedia in the text, so do not reuse it unedited. Best stack match of the set. | `Yash_Prakash_Mishra_Backend_Engineer_Node_NestJS.pdf` |
 
 Each directory contains `resume.html` (the source), `resume.md`, `resume.txt`, the rendered PDF, `TAILORING-NOTES.md` explaining what was emphasised for that job description and which of its requirements the experience does not yet cover, and `outreach-email.md` with a ready-to-send draft for the hiring manager.
 
@@ -33,6 +34,7 @@ To eyeball page breaks: `pdftoppm -png -r 70 <dir>/*.pdf /tmp/page`.
 ## Adding a version for a new job description
 
 1. Read the job description and decide whether the role is backend-led, frontend-led or full-stack. That single decision drives most of the rewrite, since the same history reads very differently depending on which work leads.
+   - If the posting is on Ashby and the page renders blank, pull the description from `https://api.ashbyhq.com/posting-api/job-board/<company>?includeCompensation=true` and match on the job id in the URL. Greenhouse and Lever have similar public endpoints. It is worth doing: the real posting had compensation and an explicit AI-tooling expectation that the LinkedIn summary did not.
 2. Copy the closest existing version's directory, then rewrite the title, summary and skills order against the new job description, pulling facts from `BASE-FACTS.md`.
 3. Add a `pdf_name_for` case in `render-pdf.sh` so the output filename reads well to a recruiter.
 4. Write `TAILORING-NOTES.md`: what was emphasised and why, and — more importantly — which requirements are not evidenced, so they can be confirmed or addressed rather than quietly faked. Add an `outreach-email.md` alongside it.
