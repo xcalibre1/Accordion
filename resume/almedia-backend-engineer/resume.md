@@ -1,100 +1,101 @@
 # Yash Prakash Mishra
 
-**Backend Engineer — Node.js, NestJS, TypeScript**
+**Backend Engineer — Node.js · NestJS · TypeScript**
 
 +91 84007 93384 · mishra.yash3443@gmail.com
 linkedin.com/in/yash-prakash-mishra-34063016a · github.com/xcalibre1
-**Happy to relocate to Berlin for an on-site role · Fluent English**
+**Open to relocation to Berlin — on-site · English: professional fluency**
 
 ---
 
-## About me
+## Professional Summary
 
-I build backend services in Node.js and TypeScript, mostly with NestJS. Five years in, the thread running through my work is other people's money: payments across four providers, loan servicing for 10,000+ active loans, and a rewards platform that verifies users, screens them for fraud and pays them out without anyone approving anything by hand. That last one is probably the most relevant thing I've built for Almedia.
-
-What I actually enjoy is integration work, particularly the ugly parts, where a third party times out halfway through a request and someone has to decide what happens next. Most of what I'm proud of is unglamorous: a webhook handler that stopped paging people at 3am, a migration that moved years of payment history with no downtime, and a queue dashboard I open-sourced because debugging jobs blind annoyed me. Cursor and Claude are part of how I work rather than a novelty.
+Backend engineer with **5+ years in Node.js, NestJS and TypeScript**, building high-volume services where money and rewards move and mistakes are expensive. Designed and owned a **rewards and referral platform** with identity verification, **fraud prevention**, audit trails and automated programmatic payouts, lifting referral conversions **25%** and eliminating manual reward processing entirely. Also owns a **provider-agnostic payments platform across four external providers** with runtime selection, circuit-breaker fallback and idempotent, deduplicated event handling. Experienced across **MySQL, MongoDB and Redis**, Kafka and BullMQ publish/subscribe pipelines, **WebSockets** for low-latency concurrent sessions, **Jest**, Docker and CI/CD, with ELK and distributed tracing for production debugging. Leads a team of 5 and ships at startup pace; AI-assisted development (Cursor, Claude) is part of the daily workflow.
 
 ---
 
-## What I work with
+## Core Skills
 
 | | |
 |---|---|
-| **Core** | TypeScript, Node.js, NestJS, Express.js, Fastify, Jest |
-| **APIs** | REST, WebSockets (Socket.io), Server-Sent Events, OpenAPI/Swagger, JWT, webhooks, idempotent endpoints, request validation |
-| **Databases** | MySQL, MongoDB, Redis, PostgreSQL, ClickHouse, Sequelize, Prisma. Data modelling, zero-downtime migrations, query tuning |
-| **Queues and events** | Kafka, BullMQ, AWS SQS. Publish/subscribe pipelines, event deduplication, retries, reconciliation |
-| **Integrations** | Stripe, Razorpay, Affirm, Jodo, Xoxoday payouts, identity verification, reCAPTCHA. Owned end to end, from first API call to production |
-| **Infrastructure** | Docker, Kubernetes (working knowledge), GitHub Actions, Jenkins, AWS (EC2, S3, SQS, KMS, IAM) |
-| **Keeping it up** | Circuit breakers, backoff retries, ELK, structured logging, distributed tracing, on-call |
-| **Architecture** | Microservices, event-driven systems, multi-tenancy, the usual patterns (Strategy, Factory, Observer) |
-| **AI tooling** | Cursor, Claude and Copilot daily, for implementation, review and refactors |
-| **Front end, when needed** | React.js, Next.js, Redux |
+| **Languages & Runtime** | TypeScript, JavaScript (ES6+), Node.js, SQL, C++ |
+| **Backend & APIs** | NestJS, Express.js, Fastify, RESTful API design, WebSockets (Socket.io), Server-Sent Events, OpenAPI/Swagger, input validation & schema guards, JWT auth, idempotent API design, webhooks |
+| **Databases** | MySQL, MongoDB, Redis, PostgreSQL, ClickHouse, Sequelize, Prisma — data modeling, zero-downtime migrations, query optimization |
+| **Messaging & Events** | Apache Kafka, BullMQ, AWS SQS, publish/subscribe pipelines, event-driven architecture, event deduplication, reconciliation |
+| **External Integrations** | Payment providers (Stripe, Razorpay, Affirm, Jodo), programmatic payouts (Xoxoday), identity verification, reCAPTCHA — owned end-to-end from POC to production |
+| **Testing & Quality** | Jest, Supertest, Mocha, unit & integration testing, Postman, pull-request review across a 5-engineer team |
+| **Infrastructure & CI/CD** | Docker, Kubernetes (working knowledge), GitHub Actions, Jenkins, AWS (EC2, S3, SQS, KMS, IAM) |
+| **Reliability & Observability** | Circuit breakers (opossum), retry with backoff (axios-retry), self-healing pipelines, ELK Stack, structured logging, distributed tracing, on-call and incident reduction |
+| **Architecture** | Microservices, distributed systems, multi-tenant architecture, Strategy / Factory / Singleton / Observer, HLD & LLD |
+| **AI-Assisted Development** | Cursor, Claude, GitHub Copilot — implementation, code review and refactoring |
+| **Frontend (secondary)** | React.js, Next.js, Redux |
 
 ---
 
-## Experience
+## Professional Experience
 
-### Novatr — Senior Software Engineer (joined as Backend Developer)
-*Aug 2023 – Present · Y Combinator-backed SaaS, running 24/7 on AWS. I lead a team of five engineers.*
-**Mostly:** NestJS, Node.js, TypeScript, PostgreSQL, MySQL, Redis, ClickHouse, Kafka, BullMQ, Socket.io, Jest, Docker, AWS
+### Novatr — Senior Software Engineer (Backend Developer → Senior Software Engineer)
+*Aug 2023 – Present · Remote · Y Combinator-backed SaaS platform, 24/7 on AWS · Led a team of 5 engineers*
+**Stack:** NestJS, Node.js, TypeScript, PostgreSQL, MySQL, Redis, ClickHouse, Apache Kafka, BullMQ, Socket.io, Jest, Docker, AWS (EC2, S3, SQS, KMS, IAM)
 
-**Rewards and payouts**
-- Built the referral and rewards platform end to end: identity verification, fraud prevention, audit trails, and automatic payouts through Xoxoday. Referral conversions went up **25%**, and nobody approves a reward by hand any more.
-- Fraud and audit were the hard parts, not the payouts. Anything that hands out something with cash value gets gamed, so every reward carries a trail of who earned it, why, and what was checked before it went out.
+**Rewards, payouts & fraud prevention**
+- Designed and owned a **rewards and referral platform** (Node.js, TypeScript, Express.js, PostgreSQL, Kafka) combining identity verification, **fraud prevention**, audit trails and **automated programmatic payouts** via Xoxoday — driving a **25% increase in referral conversions** and eliminating manual reward processing entirely.
+- Built full auditability into every reward issued: who earned it, on what basis, and which checks passed before payout — necessary because any system distributing items of cash value is an active target for abuse.
 
-**Payments and external services**
-- Built the payments platform. Four providers (Stripe, Razorpay, Affirm, Jodo) sit behind one interface and get picked at runtime, so adding a fifth doesn't mean touching checkout. I ran each integration myself, from the first API call to production.
-- Made every payment path idempotent, so a retry, a duplicated provider callback or a double-clicked button can't charge someone twice.
-- Wrote the webhook handler all four providers report into. It deduplicates events, retries itself when something fails, and reconciles status over Kafka. Manual error resolution dropped **80%**, which mostly meant people stopped getting paged.
-- Added circuit breakers and backoff retries so a slow provider degrades instead of taking checkout down with it.
+**Payments & external service integration**
+- Architected a **provider-agnostic payments platform** integrating four external providers (Stripe, Razorpay, Affirm, Jodo) using **Strategy and Factory patterns for runtime provider selection**, so onboarding a new provider requires no changes to core checkout logic; owned each integration end-to-end from POC to production.
+- Made every payment path **idempotent**, so retries, duplicate provider callbacks and client re-submissions cannot double-charge under concurrent load.
+- Designed a centralised webhook handler for all four providers with self-healing retry logic, **event deduplication** and Kafka-based status reconciliation, **cutting manual error resolution by 80%**.
+- Applied **circuit breakers** (opossum) and backoff retries (axios-retry) so a degraded provider fails over instead of taking the checkout path down with it.
 
-**Scale, data and real time**
-- Set up Kafka pipelines for payments, user lifecycle events and transactional email, so services stopped calling each other directly.
-- Moved years of payment history off a legacy system onto ClickHouse with no downtime. Node ETL, schema and integrity checks, and a rollback path I actually tested.
-- Built a live quiz engine on Socket.io and Redis for cohort sessions. Plenty of concurrent users, low latency, and it degrades gracefully when connections drop rather than falling over.
+**Scalability, data & real-time**
+- Introduced Kafka **publish/subscribe pipelines** (with BullMQ for in-process jobs) for payments, user lifecycle events and transactional email, decoupling services and improving fault tolerance platform-wide.
+- Owned a **zero-downtime migration** of payments history off a legacy system onto a **ClickHouse**-backed analytics platform via Node.js ETL, with schema validation, integrity checks and a tested rollback path.
+- Built a real-time quiz engine (Node.js, **Socket.io**, Redis) for live cohort sessions, tuned for **low-latency concurrent interactions** with graceful degradation under load.
 
-**Platform**
-- Turned a B2C product into a multi-tenant B2B one: data isolation per tenant, per-tenant configuration deciding which features each client got, and onboarding flows. Five enterprise clients onboarded, and I was the engineer they talked to.
-- Central RBAC across five internal tools, with role inheritance, scoped permissions and an audit log. Access incidents down **60%**. Also one JWT service handling token issuance, rotation and validation across three surfaces.
-- Cohort setup used to be slow and broke often, so I rebuilt the CMS behind it with proper content lifecycle and versioning. Creation got **85%** faster and the recurring on-call incidents went away.
+**Platform & access control**
+- Architected the B2C-to-B2B transition as a **multi-tenant** system (NestJS, PostgreSQL) with tenant-level data isolation, per-tenant configuration governing feature availability, and enterprise onboarding workflows — **onboarded 5+ enterprise clients** as technical point of contact.
+- Architected **centralised RBAC across 5+ internal tools** with role inheritance, permission scoping and audit logging — **60% fewer access incidents**; plus a multi-layer **JWT** service (Passport.js) for token issuance, rotation and validation across three surfaces.
+- Rebuilt the CMS backend (NestJS, PostgreSQL) with content lifecycle workflows and versioning — **85% faster cohort creation**, recurring on-call incidents eliminated.
+- Led 5 engineers across architecture decisions, **pull-request review** and delivery timelines, partnering with product, design and QA from discovery through production.
 
 ### OLX Autos — Software Engineer
-*May 2022 – May 2023 · Used-car financing for Latin America. Lending, so the edge cases have consequences.*
-**Mostly:** Node.js, TypeScript, Express.js, PostgreSQL, MySQL, Sequelize, REST, Docker, AWS
+*May 2022 – May 2023 · Remote · Used-car financing infrastructure for Latin America — regulated, high-stakes workflows*
+**Stack:** Node.js, TypeScript, Express.js, PostgreSQL, MySQL, Sequelize, REST APIs, Docker, AWS
 
-- Loan servicing for **10,000+ active loans** in Chile. I built the foreclosure and manual repayment flows that replaced work the operations team had been doing by hand.
-- Modelled the loan lifecycle as a state machine with guards on every transition: legal states only, explicit rejections, an audit record per change. Manual intervention dropped **40%**.
-- Built the risk and credit scoring workflows for loan origination. Approvals got **30%** faster, and you could see why a decision went the way it did.
-- Wrote a PDF library for generating invoices inside the disbursement flow, which gave the operations team back 10+ hours a week. I was also their point of contact, nine time zones away.
+- Built and owned foreclosure and manual repayment flows in the Loan Management System, automating loan closure and repayment tracking for **10,000+ active loans in Chile** and replacing a fully manual operations process.
+- Designed **loan lifecycle state machine APIs** with validation guards at every transition — permitted states only, explicit rejections, an audit record per change — **cutting manual intervention by 40%**.
+- Designed risk analysis and credit scoring workflows in the Loan Origination System, **reducing credit approval time by 30%** while improving decision auditability.
+- Built a reusable PDF generation library (PDFKit, Handlebars) for programmatic invoicing in loan disbursement, **saving the operations team 10+ hours weekly**; technical point of contact for the Chile team across a 9+ hour time-zone gap.
 
 ### Lenskart — Software Engineer (Frontend)
-*Apr 2021 – Apr 2022 · India's largest eyewear retailer. The project ended when the UAE market launched.*
-**Mostly:** React.js, Redux, TypeScript, Next.js, Node.js (BFF), Webpack
+*Apr 2021 – Apr 2022 · India's largest eyewear retailer · Exit: project concluded on successful UAE market launch*
+**Stack:** React.js, Redux, TypeScript, Next.js, Node.js (BFF), Webpack, REST APIs
 
-- Rebuilt the core shopping flows (home, cart, checkout, order tracking) in React and TypeScript for the UAE launch, and got it out **30%** faster than planned.
-- Worked against a Node.js BFF and agreed the response contracts with the backend team. That is where I got more interested in the backend than the front end.
+- Led the rebuild of core commerce flows (homepage, cart, checkout, order tracking) in React.js, Redux and TypeScript for the UAE market launch — **30% faster launch** with improved Lighthouse scores, as primary frontend point of contact for go-live.
+- Defined response contracts against a **Node.js BFF** layer with backend teams and reduced initial JS payload through code splitting and bundle analysis — the transition point into backend engineering.
 
 ---
 
-## Open source
+## Selected Project
 
-### BullMQ Dashboard (2025)
-*Next.js, TypeScript, Node.js, Redis, ioredis, BullMQ, Docker, Server-Sent Events* · github.com/xcalibre1/bullmq-dashboard
+### BullMQ Dashboard — open-source operational tooling for distributed job pipelines (2025)
+*Next.js (App Router), TypeScript, Node.js, Redis, ioredis, BullMQ, Express.js, Docker, SVG, Server-Sent Events* · github.com/xcalibre1/bullmq-dashboard
 
-- Bull Board shows you queue state but won't let you do much about it: no retrigger with a corrected payload, no bulk actions, no live view. I wanted those at 2am during an incident, so I built them.
-- Live stats over Server-Sent Events, an editable JSON payload editor, a throughput chart drawn in plain SVG, and bulk retry, promote, pause and resume. A Redis singleton and a cached BullMQ queue instance keep the API routes cheap.
-- Docker Compose for one-command self-hosting. Engineering teams around the world use it now, which still surprises me.
+- **Problem:** tools such as Bull Board provide queue visibility but no operational control when a pipeline misbehaves in production — no retrigger with a corrected payload, no bulk retry, no live view.
+- Built a **Next.js + TypeScript operations dashboard** with **Server-Sent Events** for live queue stats, an editable JSON payload editor, a 24-hour throughput chart in pure SVG, plus payload field search, bulk retry, promote, pause and resume.
+- API routes backed by a **Redis singleton** (ioredis) and a cached BullMQ `Queue` instance for near-zero per-request overhead; Docker Compose for one-command self-hosting. **Adopted by engineering teams globally.**
 
 ---
 
 ## Education
 
-B.Tech, Computer Science — Rajkiya Engineering College, Sonbhadra · Jul 2016 – Jun 2020
+**B.Tech, Computer Science** — Rajkiya Engineering College, Sonbhadra · Jul 2016 – Jun 2020
 
 ---
 
-## Other things
+## Additional
 
-- Happy to relocate to Berlin. I've spent five years working with teams across India, Latin America and the Middle East, so I'm used to writing things down, but I'd genuinely like to be in a room with people again.
-- What I'm looking for: a product with real traffic, a team that ships quickly, and integration problems worth solving.
+- **Open source:** author and maintainer of BullMQ Dashboard (Next.js, TypeScript), used by engineering teams globally for queue operations.
+- **Relocation & languages:** open to relocating to Berlin for an on-site role; professional fluency in English; 5 years working across distributed teams in India, Latin America and the Middle East.
+- **Interests:** rewards and AdTech platforms, payments infrastructure, event-driven systems, developer tooling.

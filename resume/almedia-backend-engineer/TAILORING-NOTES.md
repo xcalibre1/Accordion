@@ -14,28 +14,23 @@ They also say they "actively encourage AI-assisted development" and name Claude,
 
 Almedia's entire business is paying 80M users for engaging with advertisers. Which means their hardest backend problem is almost certainly **payout fraud**: people gaming an incentive system for something with cash value, at scale.
 
-You built exactly that. The referral and rewards platform at Novatr does identity verification, fraud prevention, audit trails and automatic payouts through Xoxoday. In your original resume it was a single bullet, three-quarters of the way down, under a heading about referrals. Here it opens your current role, and the second bullet spells out *why* it was hard: anything handing out cash value gets gamed, so every reward carries a trail of who earned it, why, and what was checked.
+You built exactly that. The referral and rewards platform at Novatr does identity verification, fraud prevention, audit trails and automated payouts through Xoxoday. In your original resume it was a single bullet, three-quarters of the way down, under a heading about referrals. Here it opens your current role, and the second bullet spells out *why* it was hard: anything distributing items of cash value is an active target for abuse, so every reward carries a record of who earned it, on what basis, and which checks passed before payout.
 
 If you take one thing into the interview from these notes, it is that. A backend engineer who has already shipped fraud-screened automated payouts is unusually well matched to an incentivised-engagement company, and nobody will spot it from the old resume.
 
-## The human touch, and what it cost
+## Voice
 
-You asked for this one to read like a person wrote it. What changed:
+Same professional register as the Deel, SumUp and Doctolib versions: third person, standard section headings, key terms and numbers in bold. An earlier draft of this version was written in a chatty first-person voice with sentence-case headings and asides like "which still surprises me"; it was worse, and it is gone.
 
-- **First person, and actual sentences.** "I build backend services in Node.js and TypeScript, mostly with NestJS" instead of "Backend engineer with 5+ years of expertise in...". The other three versions open with a keyword-dense paragraph; this one opens with a voice.
-- **Bold used about ten times, not a hundred.** Only the numbers are emphasised. Heavy bolding is the single clearest tell of a resume written by a tool, and stripping it out changes how the page feels more than any wording does.
-- **Plain verbs.** Built, wrote, moved, set up, rebuilt — not architected, leveraged, spearheaded, drove.
-- **Headings in sentence case**: "About me", "What I work with", "Other things". The all-caps tracked headings in the other versions read corporate.
-- **Specifics that only a person would write.** A webhook handler "that stopped paging people at 3am". A rollback path "I actually tested". A dashboard built because "debugging jobs blind annoyed me", used by teams worldwide, "which still surprises me". The CMS bullet now starts with the problem — cohort setup was slow and broke often — instead of the solution.
-- **A closing line about what you want**, which is normal in Berlin startup applications and would be out of place at Deel.
+**No company name appears anywhere in the resume.** The earlier draft named Almedia in the summary, which was a mistake — a resume should read as a description of you, not as a letter to one employer. Company-specific framing belongs in the outreach email and the interview, which is where it now lives.
 
-The cost: it is less keyword-dense than the other versions, and it names Almedia in the second paragraph. **Do not reuse this file for another company** without editing that line. If Almedia turns out to screen through a strict keyword filter, the SumUp or Doctolib version is the safer shape — but for a bootstrapped startup on Ashby, a human is reading this, and a resume that sounds like a human is an advantage.
+Tailoring here is done through ordering and selection instead: the rewards and fraud work leads, the skills rows are sequenced to match their stack, and AI-assisted development gets its own row. All of that is invisible to anyone reading it cold, which is the point.
 
 ## Check these two things before you send
 
-1. **"Per-tenant configuration deciding which features each client got."** I wrote it that way because the posting asks about feature flagging, and multi-tenant config usually does gate features. If your tenant configuration was really only branding and settings rather than turning features on and off, reword it — it is the one line here that leans on an assumption about your system rather than a stated fact.
+1. **"Per-tenant configuration governing feature availability."** Phrased that way because the posting asks about feature flagging, and multi-tenant config usually does gate features. If your tenant configuration was really only branding and settings rather than turning features on and off, reword it — it is the one line here that leans on an assumption about your system rather than a stated fact.
 
-2. **The AI tooling row.** You do use Cursor, or these resumes would not exist. But the row says Claude and Copilot too, and it says "daily". Trim it to whatever is actually true; they will ask how you use it, and "I run Cursor with Claude for implementation and review" is a better answer than a list.
+2. **The AI-Assisted Development row.** You do use Cursor, or these resumes would not exist. But the row also claims Claude and Copilot. Trim it to whatever is actually true; they will ask how you use it, and a specific answer beats a list of three tools.
 
 ## Gaps
 
