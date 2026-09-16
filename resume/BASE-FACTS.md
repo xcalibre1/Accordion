@@ -115,7 +115,14 @@ Things job descriptions keep asking for that the facts above do not support. Not
 | Hard transaction volume / throughput figure for the payments platform | Deel, SumUp | **Missing.** Only percentage improvements exist, no absolute volume. |
 | A specific PostgreSQL query-optimization win (index, rewrite, partitioning, with before/after latency) | Deel (explicit) | **Missing.** Claimed as a skill, never demonstrated in a bullet. |
 | Multi-currency / FX / tax / regulatory compliance work | Deel, SumUp | **Unconfirmed.** The Chile lending work is a plausible source. |
-| AI tooling in the engineering workflow (Cursor, Copilot) | SumUp (plus) | **Unconfirmed**, though likely true. |
+| AI tooling in the engineering workflow (Cursor, Copilot, Claude) | SumUp (plus), Almedia (**expected** — "we actively encourage AI-assisted development") | **Effectively confirmed** for Cursor. Claimed as a skills row in the Almedia version; trim the specific tools to whatever is actually true. |
+| GraphQL | Almedia (in their stack) | **Absent.** REST and BFF contract design are the nearest transferable thing. |
+| gRPC | Almedia (in their stack) | **Absent.** |
+| RabbitMQ, Google Pub/Sub | Almedia (in their stack) | **Not a real gap.** Kafka, BullMQ and SQS cover the concepts; name the difference rather than hiding it. |
+| BigQuery | Almedia (in their stack) | **Not a real gap.** ClickHouse is the same class of columnar analytical store, and there is a migration onto it to talk about. |
+| Datadog | Almedia (in their stack) | **Not a real gap.** ELK, structured logging and distributed tracing are the same concepts. |
+| A/B testing and feature-flagging platforms | Almedia ("what you'll do") | **Absent.** Per-tenant configuration and RBAC are the nearest shape; no experimentation platform integrated. |
+| Absolute scale figures (users, requests/sec, transaction volume) | Almedia (80M+ users), Deel, SumUp | **Missing.** Every metric is a percentage or in the thousands. Not fixable by wording — talk about patterns instead. |
 | Modern state management beyond Redux (React Query, Zustand, Context patterns) | SumUp | **Unconfirmed.** |
 | Depth on Kubernetes | Listed as "basic" originally | **Weak.** Softened to "working knowledge"; drop it if he cannot discuss it. |
 
