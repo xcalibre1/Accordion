@@ -9,7 +9,7 @@ Tailored resume versions for Yash Prakash Mishra, one directory per target role.
 | `deel-backend-engineer/` | Deel — Backend Engineer (Node.js) | Backend-led. Payments and FinTech first, frontend condensed. | `Yash_Prakash_Mishra_Backend_Engineer_Node.pdf` |
 | `sumup-bank-web-fullstack/` | SumUp — Bank Web squad (full-stack, Sofia) | Frontend-core full-stack. React/TypeScript first, back-office tooling and API contracts surfaced. | `Yash_Prakash_Mishra_Fullstack_Engineer_React_Node.pdf` |
 | `doctolib-dial-senior-backend/` | Doctolib — Senior SWE, DIAL / Phone Assistant (Berlin) | Backend-led, reliability and real-time first, with the administrative-burden-reduction track record as the hook. **Two hard requirements are unmet — read that version's notes.** | `Yash_Prakash_Mishra_Senior_Backend_Engineer_Node_TypeScript.pdf` |
-| `almedia-backend-engineer/` | Almedia — Backend Engineer (Berlin, on-site) | Node/NestJS, led by the rewards-and-payouts fraud work. **Written in a deliberately human voice** — first person, minimal bold, plain verbs — and it names Almedia in the text, so do not reuse it unedited. Best stack match of the set. | `Yash_Prakash_Mishra_Backend_Engineer_Node_NestJS.pdf` |
+| `almedia-backend-engineer/` | Almedia — Backend Engineer (Berlin, on-site) | Node/NestJS, led by the rewards-and-payouts fraud work, with skills rows sequenced to their stack. Best stack match of the set. | `Yash_Prakash_Mishra_Backend_Engineer_Node_NestJS.pdf` |
 
 Each directory contains `resume.html` (the source), `resume.md`, `resume.txt`, the rendered PDF, `TAILORING-NOTES.md` explaining what was emphasised for that job description and which of its requirements the experience does not yet cover, and `outreach-email.md` with a ready-to-send draft for the hiring manager.
 
@@ -30,6 +30,13 @@ Each directory contains `resume.html` (the source), `resume.md`, `resume.txt`, t
 Requires Chrome or Chromium on `PATH`, or `CHROME_BIN` set. If `pdfinfo` is installed (`apt install poppler-utils`) the script also prints the page count, which is the thing to check after editing — two pages is the target.
 
 To eyeball page breaks: `pdftoppm -png -r 70 <dir>/*.pdf /tmp/page`.
+
+## House style
+
+Two rules that apply to every version:
+
+1. **Never name the target company in the resume itself.** A resume should read as a description of the candidate, not a letter to one employer. Company-specific framing goes in `outreach-email.md` and the interview. Tailoring is done through what leads, what gets cut, and how the skills rows are ordered — all of which is invisible to someone reading the page cold.
+2. **Keep the professional register**: third person, standard section headings, key terms and numbers in bold. Plain, natural wording is good; first-person narration, chatty asides and sentence-case headings are not. "Sounding human" means avoiding stilted phrasing and buzzword padding, not becoming informal.
 
 ## Adding a version for a new job description
 
