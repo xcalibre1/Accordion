@@ -3,134 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <title>Yash Prakash Mishra — Senior Software Engineer, Backend</title>
-<style>
-  @page { size: A4; margin: 11mm 13mm; }
-
-  :root {
-    --ink: #14181f;
-    --muted: #4a5262;
-    --rule: #c9cfda;
-    --accent: #0b3a6f;
-  }
-
-  * { box-sizing: border-box; }
-
-  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-
-  body {
-    margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 9.3pt;
-    line-height: 1.31;
-    color: var(--ink);
-  }
-
-  header { margin-bottom: 7px; }
-
-  h1 {
-    margin: 0;
-    font-size: 19pt;
-    letter-spacing: 0.3px;
-    font-weight: 700;
-  }
-
-  .role {
-    margin-top: 2px;
-    font-size: 10.4pt;
-    font-weight: 600;
-    color: var(--accent);
-  }
-
-  .contact {
-    margin-top: 3px;
-    font-size: 8.9pt;
-    color: var(--muted);
-  }
-
-  h2 {
-    font-size: 9.4pt;
-    text-transform: uppercase;
-    letter-spacing: 1.1px;
-    font-weight: 700;
-    color: var(--accent);
-    margin: 11px 0 4px;
-    padding-bottom: 2px;
-    border-bottom: 0.8px solid var(--rule);
-  }
-
-  p { margin: 0 0 4px; }
-
-  .summary { text-align: justify; }
-
-  table.skills {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  table.skills td {
-    vertical-align: top;
-    padding: 1.4px 0;
-  }
-
-  table.skills td.k {
-    width: 27%;
-    padding-right: 8px;
-    font-weight: 700;
-    white-space: nowrap;
-  }
-
-  .job { margin-top: 7px; }
-
-  .job-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 10px;
-  }
-
-  .job-title { font-weight: 700; font-size: 10.2pt; }
-  .job-title .company { }
-  .job-title .sep { color: var(--muted); font-weight: 400; }
-  .job-dates { font-size: 8.9pt; color: var(--muted); white-space: nowrap; font-weight: 600; }
-
-  .job-context {
-    font-size: 8.9pt;
-    color: var(--muted);
-    font-style: italic;
-    margin-top: 1px;
-  }
-
-  .stack {
-    font-size: 8.7pt;
-    color: var(--muted);
-    margin: 2px 0 3px;
-  }
-
-  .stack b { color: var(--ink); font-style: normal; }
-
-  .group {
-    font-size: 9.2pt;
-    font-weight: 700;
-    margin: 4px 0 1px;
-  }
-
-  ul {
-    margin: 0 0 0 13px;
-    padding: 0;
-  }
-
-  li { margin-bottom: 2.2px; page-break-inside: avoid; }
-
-  h2, .group, .job-head, .job-context, .stack { page-break-after: avoid; }
-
-  strong { font-weight: 700; }
-
-  .project { page-break-inside: avoid; }
-
-  .edu-line { display: flex; justify-content: space-between; gap: 10px; }
-
-  a { color: inherit; text-decoration: none; }
-</style>
+<link rel="stylesheet" href="../shared/resume.css" />
 </head>
 <body>
 
@@ -138,20 +11,22 @@
   <h1>Yash Prakash Mishra</h1>
   <div class="role">Senior Software Engineer &mdash; Backend (Node.js &middot; TypeScript &middot; PostgreSQL)</div>
   <div class="contact">
-    Remote (India, IST) &middot; +91 84007 93384 &middot; mishra.yash3443@gmail.com &middot;
-    linkedin.com/in/yash-prakash-mishra-34063016a &middot; github.com/xcalibre1
+    <span class="nb">Remote (India, IST)</span> &middot; <span class="nb">+91 84007 93384</span> &middot;
+    <span class="nb">mishra.yash3443@gmail.com</span> &middot;
+    <span class="nb">linkedin.com/in/yash-prakash-mishra-34063016a</span> &middot;
+    <span class="nb">github.com/xcalibre1</span>
   </div>
 </header>
 
 <h2>Professional Summary</h2>
 <p class="summary">
-  Backend engineer with 4.9 years building high-volume, money-moving systems in <strong>Node.js and TypeScript on
+  Backend engineer with 5+ years building high-volume, money-moving systems in <strong>Node.js and TypeScript on
   PostgreSQL</strong>, for SaaS products running 24/7 on AWS. Designed and owned a <strong>gateway-agnostic payments
   platform</strong> across four providers (Stripe, Razorpay, Affirm, Jodo) with <strong>idempotent transaction
   handling</strong>, webhook reconciliation and circuit-breaker failover, and a <strong>loan management system serving
   10,000+ active loans</strong> for OLX Autos in Chile. Strong on <strong>OOP and design patterns</strong>,
   <strong>queue-based architecture</strong> (Kafka, BullMQ, SQS), JWT auth and input validation, and
-  <strong>multi-tenant architecture</strong> taken from B2C to 5+ enterprise clients. Fully remote for 4+ years,
+  <strong>multi-tenant architecture</strong> taken from B2C to 5+ enterprise clients. Fully remote for 5 years,
   collaborating asynchronously with product, design, QA and frontend across India, LatAm and the Middle East.
 </p>
 
@@ -254,7 +129,7 @@
 <h2>Additional</h2>
 <ul>
   <li><strong>Open source:</strong> author and maintainer of BullMQ Dashboard (Node.js, TypeScript), used by engineering teams globally for queue operations.</li>
-  <li><strong>Remote-first:</strong> 4+ years fully remote across distributed teams in India, Latin America and the Middle East, owning work asynchronously and communicating in writing. <strong>Interests:</strong> distributed systems, payments infrastructure, FinTech, developer tooling.</li>
+  <li><strong>Remote-first:</strong> 5 years fully remote across distributed teams in India, Latin America and the Middle East, owning work asynchronously and communicating in writing. <strong>Interests:</strong> distributed systems, payments infrastructure, FinTech, developer tooling.</li>
 </ul>
 
 </body>

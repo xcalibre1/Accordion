@@ -6,14 +6,14 @@ linkedin.com/in/yash-prakash-mishra-34063016a | github.com/xcalibre1
 
 PROFESSIONAL SUMMARY
 
-Backend engineer with 4.9 years building high-volume, money-moving systems in Node.js
+Backend engineer with 5+ years building high-volume, money-moving systems in Node.js
 and TypeScript on PostgreSQL, for SaaS products running 24/7 on AWS. Designed and owned
 a gateway-agnostic payments platform across four providers (Stripe, Razorpay, Affirm,
 Jodo) with idempotent transaction handling, webhook reconciliation and circuit-breaker
 failover, and a loan management system serving 10,000+ active loans for OLX Autos in
 Chile. Strong on OOP and design patterns, queue-based architecture (Kafka, BullMQ, SQS),
 JWT auth and input validation, and multi-tenant architecture taken from B2C to 5+
-enterprise clients. Fully remote for 4+ years, collaborating asynchronously with
+enterprise clients. Fully remote for 5 years, collaborating asynchronously with
 product, design, QA and frontend across India, LatAm and the Middle East.
 
 
@@ -143,6 +143,6 @@ ADDITIONAL
 
 - Open source: author and maintainer of BullMQ Dashboard (Node.js, TypeScript), used by
   engineering teams globally for queue operations.
-- Remote-first: 4+ years fully remote across distributed teams in India, Latin America
+- Remote-first: 5 years fully remote across distributed teams in India, Latin America
   and the Middle East, owning work asynchronously and communicating in writing.
 - Interests: distributed systems, payments infrastructure, FinTech, developer tooling.
