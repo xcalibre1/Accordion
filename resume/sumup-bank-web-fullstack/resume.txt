@@ -7,7 +7,7 @@ Open to relocation to Sofia - office-first
 
 PROFESSIONAL SUMMARY
 
-Full-stack engineer with 4.9 years shipping production features end-to-end - React and
+Full-stack engineer with 5+ years shipping production features end-to-end - React and
 TypeScript on the front, Node.js and PostgreSQL behind them. Owned and led the complete
 rebuild of Lenskart's core shopping flows (homepage, cart, checkout, order tracking) in
 React, Redux and TypeScript for its UAE launch; at Novatr launched a Next.js web platform
@@ -153,7 +153,7 @@ ADDITIONAL
 
 - Open source: author and maintainer of BullMQ Dashboard (Next.js, TypeScript), used by
   engineering teams globally.
-- Relocation: open to relocating to Sofia for an office-first role. Four years of
+- Relocation: open to relocating to Sofia for an office-first role. Five years of
   distributed work across India, Latin America and the Middle East - strong written
   communication, and glad to be back in a room with a team.
 - Interests: banking and payments products, frontend architecture, developer tooling.
