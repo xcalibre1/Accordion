@@ -21,6 +21,7 @@ pdf_name_for() {
     sumup-bank-web-fullstack)   echo "Yash_Prakash_Mishra_Fullstack_Engineer_React_Node.pdf" ;;
     doctolib-dial-senior-backend) echo "Yash_Prakash_Mishra_Senior_Backend_Engineer_Node_TypeScript.pdf" ;;
     almedia-backend-engineer)   echo "Yash_Prakash_Mishra_Backend_Engineer_Node_NestJS.pdf" ;;
+    navvis-fullstack-engineer)  echo "Yash_Prakash_Mishra_Fullstack_Engineer_TypeScript_PostgreSQL.pdf" ;;
     *)                          echo "Yash_Prakash_Mishra_Resume.pdf" ;;
   esac
 }

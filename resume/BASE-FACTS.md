@@ -107,7 +107,12 @@ Things job descriptions keep asking for that the facts above do not support. Not
 | Speech pipelines (ASR, TTS, streaming audio), voice agents | Doctolib (bonus) | **Absent.** |
 | Telephony and real-time comms (SIP, RTP, WebRTC) | Doctolib (bonus, explicitly teachable) | **Absent** — and explicitly not required, so low priority. |
 | A second server-side language actually used in production (Python, Go, Java, Kotlin, Ruby) | Deel (required), SumUp (valued) | **Unconfirmed.** C++ is listed as a language but no experience bullet uses it. |
-| Kotlin / Java / Go / Angular familiarity | SumUp (plus) | **Unconfirmed.** |
+| **Java, Spring, Hibernate** | NavVis (**required, "expertise"**) | **Absent.** All five years of backend work are Node/TypeScript. NestJS transfers the architecture (DI, modules, decorators) and Sequelize/Prisma transfer the ORM concepts, but nothing transfers the language. Decisive blocker for any JVM shop. |
+| Angular | NavVis (accepts React or Vue instead), SumUp (plus) | **Absent but not blocking** where React is accepted. NestJS is modelled on Angular's architecture, so it is the shortest hop available. |
+| PostGIS / geospatial data | NavVis (required for the data layer; geospatial listed as bonus) | **Absent.** PostgreSQL is strong; spatial types, GiST indexes and spatial functions are not. Cheap to close. |
+| 3D graphics / WebGL | NavVis (bonus) | **Partial.** WebXR try-on integration at Lenskart is real and browser-side, but it is component integration, not renderer or shader work. State the depth precisely. |
+| SDKs (as distinct from APIs) | NavVis (required, with developer feedback loops) | **Effectively covered.** Reusable PDF library at OLX plus BullMQ Dashboard, whose roadmap came from user issue reports. The feedback half is genuinely strong evidence. |
+| Kotlin / Go familiarity | SumUp (plus) | **Unconfirmed.** |
 | End-to-end testing (Cypress, Playwright) | SumUp (explicit), Doctolib (explicit) | **Unconfirmed.** Only Jest/Supertest/Mocha are evidenced. Asked for by every role so far. |
 | Snapshot testing, React Testing Library | SumUp (explicit) | **Weak.** Jest is evidenced; React-specific test tooling is not. |
 | Accessibility (WCAG, ARIA, screen readers) | SumUp (PR review criterion) | **Unconfirmed.** No a11y work in any bullet. |
@@ -133,6 +138,8 @@ Several gaps above recur across every application, and one focused project would
 In short: add **LLM-powered failure triage to BullMQ Dashboard** (structured outputs, tool calling into the existing queue operations, guardrails requiring confirmation before mutating a queue, fallback when the provider times out), back it with a real **evaluation set and scorers wired into CI**, write that **eval harness in Python**, deploy it to **managed Kubernetes** with a Helm chart and GitHub Actions, and add **Playwright** end-to-end tests.
 
 That converts production LLM work, eval frameworks, Python, Kubernetes and e2e testing from absent to defensible — on a repository that already has real users. Update this file when it ships and rebuild every version.
+
+There is a second, much smaller project with a similar payoff for JVM shops, described in [`navvis-fullstack-engineer/TAILORING-NOTES.md`](navvis-fullstack-engineer/TAILORING-NOTES.md): a **Spring Boot service with Hibernate entities over PostgreSQL + PostGIS**, serving geospatial features to a small **Angular** client. That is a weekend rather than a month, and it closes Java, Spring, Hibernate, PostGIS and Angular in one repository — five rows of the table above, four of which are also the second-language gap that Deel and SumUp ask about.
 
 ## Tailoring checklist
 
